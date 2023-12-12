@@ -84,7 +84,7 @@ public class PlayerManager : MonoBehaviour
         }
         healthSlider.value = health;
     }
-    void Die() //if health is equals to, or less than 0, destroys player object, instantiates b(p)lood and loads up the lose screen.
+    void Die()
     {
         if (health <= 0)
         {
@@ -123,12 +123,15 @@ public class PlayerManager : MonoBehaviour
                     break;
                 case ("Key1" + "(Clone)"):
                     hasKey1 = true;
+                    Destroy(other.gameObject);
                     break;
                 case ("Key2" + "(Clone)"):
                     hasKey2 = true;
+                    Destroy(other.gameObject);
                     break;
                 case ("Key3" + "(Clone)"):
                     hasKey3 = true;
+                    Destroy(other.gameObject);
                     break;
             }
             pickupSound.Play();

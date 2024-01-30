@@ -110,5 +110,6 @@ public class DataManager : MonoBehaviour
     public void Lose()
     {
         Debug.Log("You Lost.");
+        myFile.Dispose();
     }
 }

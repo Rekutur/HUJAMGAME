@@ -103,6 +103,12 @@ public class GunScript : MonoBehaviour
             bulletMax = 0;
             bulletCount = bulletCurrent;
         }
+        if (bulletCurrent <= 0 || bulletMax <= 0)
+        {
+            bulletCurrent = 0;
+            bulletMax = 0;
+        }
+
 
     }
 }

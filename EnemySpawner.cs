@@ -11,13 +11,11 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private float _maximumSpawnTime;
     public float minX, maxX, minY, maxY;
     private float _timeUntilNextSpawn;
-    // Start is called before the first frame update
+
     void Awake()
     {
         SetTimeUntilSpawn();
     }
-
-    // Update is called once per frame
     void Update()
     {
         float distanceFromPlayer = Vector2.Distance(player.position, transform.position);

@@ -104,9 +104,11 @@ public class DataManager : MonoBehaviour
         }
     }
 
-    public void Win()
+    //TODO: ADD WIN CONDITION&OUTCOME
+    /*public void Win()
     {
     }
+    */
     public void Lose()
     {
         Debug.Log("You Lost.");
